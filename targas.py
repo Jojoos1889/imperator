@@ -1,0 +1,12 @@
+import os 
+targa = input("licens plates-->")
+polizza = input("policy number-->")
+luogo = input("where it was headed?-->")
+nomecognome = input("name and surname of owner-->")
+colore = input("color-->")
+marca = input("brand-->")
+cilindrata = input("displacement-->")
+print("[+]success.")
+print("[*]writing...")
+file = open(targa+".txt", "w")
+file.write("licens plate number:"+targa+"\npolicy number:"+polizza+"\nplace of headed:"+luogo+"\nname and surname of owner:"+nomecognome+"\ncar's color:"+colore+"\nbrand:"+marca+"\ndisplacement:"+cilindrata)

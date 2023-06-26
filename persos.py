@@ -1,0 +1,10 @@
+import os 
+nome = input("name-->")
+cognome = input("surname-->")
+luogo = input("where is born-->")
+fiscode = input("fiscal code-->")
+postcod = input("postal code-->")
+print("[+]success.")
+print("[*]writing...")
+file = open(nome+""+cognome+".txt", "w")
+file.write("name:"+nome+"\nsurname:"+cognome+"\nborn place:"+luogo+"\nfiscal code:"+fiscode+"\npostal code:"+postcod)
